@@ -23,22 +23,8 @@ class DatabaseSeeder extends Seeder
             'role' => true,
         ],);
 
-        User::factory()->create([
-            'name' => 'User',
-            'email' => 'user@user.com',
-            'password' => 12345678,
-            'role' => false,
-        ],);
 
 
-        Order::factory()->create([
-            'user_id' => 2,
-            'total_amount' => 100.00,
-            'status' => 'pending',
-            'shipping_address' => '123 Main St, City, Country',
 
-        ],);
-
-        $this->call(ProductSeeder::class);
     }
 }
