@@ -5,3 +5,7 @@ import toastr from 'toastr';
 
 window.toastr = toastr;
 
+import.meta.glob([
+    "../images/**"
+]);
+
